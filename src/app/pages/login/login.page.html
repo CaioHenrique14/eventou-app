@@ -1,0 +1,33 @@
+<ion-content>
+  <div class="bg-color"></div>
+  <div class="content">
+    <img alt="Logo" src="assets/logo.png" />
+    <form [formGroup]="formLogin">
+      <p>Login</p>
+      <div class="form-group">
+        <ion-item class="email" fill="outline">
+          <ion-input formControlName="email" type="mail" placeholder="Email">
+          </ion-input>
+          <ion-icon name="mail"></ion-icon>
+        </ion-item>
+        <ion-item class="senha" fill="outline">
+          <ion-input formControlName="senha" type="password" placeholder="Senha"></ion-input>
+          <ion-icon name="lock-closed"></ion-icon>
+        </ion-item>
+      </div>
+
+      <p>Esqueci minha senha</p>
+      <ion-item lines="none" class="toggle">
+        <ion-toggle color="primary" mode="md" formControlName="toggle">
+        </ion-toggle>
+        <ion-label>Lembrar dados de acesso</ion-label>
+      </ion-item>
+      <div class="btn">
+        <ion-button [disabled]="!formLogin.valid" (click)="login()">Entrar</ion-button>
+        <p (click)="register()">Primeira vez aqui? Cadastrar-se</p>
+
+      </div>
+
+    </form>
+  </div>
+</ion-content>

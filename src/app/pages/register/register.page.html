@@ -1,0 +1,36 @@
+<ion-content>
+  <div class="bg-color"></div>
+  <div class="content">
+    <img alt="Logo" src="assets/logo.png" />
+    <form [formGroup]="formRegister">
+      <p>Criar conta</p>
+      <ion-item lines="none" class="name">
+        <ion-input formControlName="name" type="text" placeholder="Nome">
+        </ion-input>
+        <ion-icon name="person"></ion-icon>
+      </ion-item>
+      <ion-item lines="none" class="mail">
+        <ion-input formControlName="mail" type="mail" placeholder="Email">
+        </ion-input>
+        <ion-icon name="mail"></ion-icon>
+      </ion-item>
+      <ion-item lines="none" class="password">
+        <ion-input formControlName="password" type="password" placeholder="Senha"></ion-input>
+        <ion-icon name="lock-closed"></ion-icon>
+      </ion-item>
+      <ion-item lines="none" class="confirm_password">
+        <ion-input formControlName="confirmPassword" type="password" placeholder="Confirme Senha"></ion-input>
+        <ion-icon name="lock-closed"></ion-icon>
+      </ion-item>
+      <ion-item lines="none" class="toggle">
+        <ion-toggle color="primary" mode="md" formControlName="toggle">
+        </ion-toggle>
+        <ion-label>Lembrar dados de acesso</ion-label>
+      </ion-item>
+      <div class="btn">
+        <ion-button [disabled]="!formRegister.valid">Cadastrar</ion-button>
+      </div>
+
+    </form>
+  </div>
+</ion-content>
