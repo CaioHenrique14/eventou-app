@@ -10,9 +10,18 @@
         <ion-icon name="person"></ion-icon>
       </ion-item>
       <ion-item lines="none" class="mail">
-        <ion-input formControlName="mail" type="mail" placeholder="Email">
+        <ion-input formControlName="email" type="mail" placeholder="Email">
         </ion-input>
         <ion-icon name="mail"></ion-icon>
+      </ion-item>
+      <ion-item lines="none" class="mail">
+        <ion-input formControlName="birthDate" type="date" placeholder="Data de nascimento">
+        </ion-input>
+        <ion-icon name="calendar-number"></ion-icon>
+      </ion-item>
+      <ion-item lines="none" class="phone">
+        <ion-input formControlName="phone" simpleMask="(99) 99999-9999" maxlength="15" type="tel" placeholder="Telefone"></ion-input>
+        <ion-icon name="call"></ion-icon>
       </ion-item>
       <ion-item lines="none" class="password">
         <ion-input formControlName="password" type="password" placeholder="Senha"></ion-input>
@@ -28,7 +37,7 @@
         <ion-label>Lembrar dados de acesso</ion-label>
       </ion-item>
       <div class="btn">
-        <ion-button [disabled]="!formRegister.valid">Cadastrar</ion-button>
+        <ion-button [disabled]="!formRegister.valid" (click)="register()">Cadastrar</ion-button>
       </div>
 
     </form>

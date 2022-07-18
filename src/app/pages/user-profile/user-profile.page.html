@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title size="large">Olá {{user?.name || ''}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="content">
+  <ion-list class="list-user">
+    <ion-item-divider>
+      <ion-label>
+        Dados pessoais
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item lines="none"><ion-label>{{user?.name || ''}}</ion-label></ion-item>
+    <ion-item lines="none"><ion-label>{{user?.email || ''}}</ion-label></ion-item>
+    <ion-item lines="none"><ion-label>{{user?.phone || ''}}</ion-label></ion-item>
+
+    <ion-item-divider>
+      <ion-label>
+        Eventos
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item  lines="none">
+      <!-- <ion-button>
+        Criar Evento
+        <ion-icon name="caret-forward-circle-outline" slot="end"></ion-icon>
+      </ion-button> -->
+      <ion-label>
+        Criar Evento
+      </ion-label>
+      <ion-icon name="caret-forward-outline" slot="end"></ion-icon>
+     </ion-item>
+    <ion-item  lines="none">
+      <ion-button>
+        Visualizar Evento
+        <ion-icon name="caret-forward-circle-outline" slot="end"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</div>
+
+</ion-content>

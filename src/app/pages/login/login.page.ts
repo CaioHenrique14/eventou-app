@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoadingController, ToastController } from '@ionic/angular';
 import { UserService } from 'src/app/services/user.service';
+import { Storage } from '@ionic/storage-angular';
 
 @Component({
   selector: 'app-login',
@@ -50,17 +51,17 @@ export class LoginPage implements OnInit {
     this.userService.authUser(body).then((res: any) => {
       console.log(res);
       this.storage.set('user',res);
-      this.router.navigate(['/home']);
+      this.router.navigate(['/tabs']);
     }).catch(async (err: any) => {
       console.error(err);
       const toast = await this.toastController.create({
         header: 'Falha no login',
         message: 'Por favor verifique email e ou senha',
-        position: 'top',
+        position: 'bottom',
       });
       toast.present();
     });
-    // this.router.navigate(['/initial']);
+    // this.router.navigate(['/tabs']);
 
   }
 

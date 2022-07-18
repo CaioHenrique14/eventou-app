@@ -1,0 +1,32 @@
+ion-content {
+  --background: url('/assets/background.png') no-repeat center/cover fixed;
+}
+
+.content {
+  padding-top: 1rem;
+
+}
+
+ion-content {
+  ion-header {
+    margin-top: 5rem;
+  }
+}
+
+.list-user {
+
+  ion-item-divider {
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  ion-item {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  // ion-button {
+  //   width: 100%;
+  // }
+}
