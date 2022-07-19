@@ -1,0 +1,39 @@
+ion-content {
+  --background: url('/assets/background.png') no-repeat center/cover fixed;
+}
+
+ion-card {
+  position: relative;
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  height: 6rem;
+}
+
+.cover{
+  background-color: #000;
+  opacity: 0.95;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--ion-color-primary);
+  ;
+}
+
+.card-title {
+  position: absolute;
+  top: 36%;
+  font-size: 2.0em;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card-subtitle {
+  font-size: 1.0em;
+  position: absolute;
+  top: 56%;
+  width: 100%;
+  color: #fff;
+}
+
+

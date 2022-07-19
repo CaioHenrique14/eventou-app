@@ -1,15 +1,41 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Eventos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card [style.backgroundImage]="'url(assets/img/festa1.jpg)'">
+    <div class="cover"></div>
+    <div class="card-title">Festa</div>
+    <div class="card-subtitle">19/07/2022</div>
+    <div class="card-hora">22:30</div>
+    <div class="card-valor">R$20,00</div>
+  </ion-card>
+
+  <ion-card [style.backgroundImage]="'url(assets/img/festa3.jpg)'">
+    <div class="cover"></div>
+    <div class="card-title">Festa</div>
+    <div class="card-subtitle">19/07/2022</div>
+    <div class="card-hora">15:30</div>
+    <div class="card-valor">R$35,00</div>
+  </ion-card>
+
+  <ion-card [style.backgroundImage]="'url(assets/img/festa2.jpg)'">
+    <div class="cover"></div>
+    <div class="card-title">Festa</div>
+    <div class="card-subtitle">19/07/2022</div>
+    <div class="card-hora">23:59</div>
+    <div class="card-valor">R$30,00</div>
+  </ion-card>
+
+  <ion-card [style.backgroundImage]="'url(assets/img/festa4.jpg)'">
+    <div class="cover"></div>
+    <div class="card-title">Festa</div>
+    <div class="card-subtitle">19/07/2022</div>
+    <div class="card-hora">22:00</div>
+    <div class="card-valor">R$20,00</div>
+  </ion-card>
 </ion-content>
